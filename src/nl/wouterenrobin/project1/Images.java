@@ -4,12 +4,14 @@ import java.io.IOException;
 
 import org.lwjgl.opengl.GL11;
 import org.newdawn.slick.Image;
+import org.newdawn.slick.SpriteSheet;
 import org.newdawn.slick.opengl.TextureLoader;
 import org.newdawn.slick.util.ResourceLoader;
 
 public class Images
 {
-	public static final Image test = loadImage("test"); 
+	public static final Image test = loadImage("test");
+	public static final SpriteSheet terrain = new SpriteSheet(loadImage("terrain"),16,16);
 			
 	public static final Image loadImage(String s)
 	{
